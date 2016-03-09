@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="hw2.cs4330.cs.utep.edu.omok.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/player_one_colon"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewPlayerOne"
+        android:layout_marginTop="10dp"
+        android:text="@string/player_two_colon"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewPlayerOne"
+        android:layout_toEndOf="@+id/textViewPlayerOne"
+        android:layout_toLeftOf="@+id/buttonNewGame"
+        android:layout_toRightOf="@+id/textViewPlayerOne"
+        android:layout_toStartOf="@+id/buttonNewGame"
+        android:hint="@string/name"
+        android:text="@string/player_one"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editTextPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextPlayerOne"
+        android:layout_alignRight="@+id/editTextPlayerOne"
+        android:layout_alignTop="@+id/textViewPlayerTwo"
+        android:layout_toRightOf="@+id/textViewPlayerOne"
+        android:hint="@string/name"
+        android:text="@string/player_two"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextPlayerTwo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="startNewGame"
+        android:text="@string/new_game" />
+
+    <hw2.cs4330.cs.utep.edu.omok.view.BoardView
+        android:id="@+id/boardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPlayerTwo"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" />
+
+
+</RelativeLayout>

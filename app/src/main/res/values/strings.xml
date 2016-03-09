@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Omok</string>
+    <string name="player_one_colon">Player One:</string>
+    <string name="player_two_colon">Player Two:</string>
+    <string name="player_one">Player One</string>
+    <string name="player_two">Player Two</string>
+    <string name="name">Name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="game_started">Game started</string>
+    <string name="new_game_canceled">New game canceled</string>
+    <string name="new_game">New Game</string>
+    <string name="new_game_prompt">Are you sure you want to start a new game?</string>
+    <string name="wins">&#160;wins!!!!</string>
+</resources>
