@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextPlayerOne;
     private EditText editTextPlayerTwo;
 
+
+    //TEST UPDATE JUAN RAZO
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
